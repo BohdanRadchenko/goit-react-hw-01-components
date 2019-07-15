@@ -1,0 +1,35 @@
+.list {
+  width: inherit;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  padding: 20px 0;
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+  background-color: #f3f6f9;
+  border: 1px solid #e4e9f0;
+}
+
+.followersText,
+.viewsText,
+.likesText {
+  color: #768696;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.followersCount,
+.viewsCount,
+.likesCount {
+  color: #1f3349;
+  display: block;
+  font-size: 14px;
+  font-weight: 900;
+}

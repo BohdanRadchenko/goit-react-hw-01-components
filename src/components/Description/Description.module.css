@@ -1,0 +1,30 @@
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.name,
+.tag,
+.location {
+  margin: 0;
+  font-size: 14px;
+  color: #768696;
+}
+
+.name {
+  color: #122236;
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.tag {
+  margin-bottom: 10px;
+}
+
+.location {
+  margin-bottom: 32px;
+}
