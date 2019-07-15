@@ -12,7 +12,7 @@ const App = () => {
   return (
     <Fragment>
       <Profile profile={profile} />
-      <Stats stats={stats} />
+      <Stats stats={stats} title="Upload stats" />
       <PricingPlan pricingPlan={pricingPlanItem} />
       <TransactionHistory items={transactions} />
     </Fragment>
