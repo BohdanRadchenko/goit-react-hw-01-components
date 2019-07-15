@@ -5,6 +5,8 @@ import Stats from './Stats/Stats';
 import stats from '../assets/stats.json';
 import PricingPlan from './PricingPlan/PricingPlan';
 import pricingPlanItem from '../assets/pricing-plan.json';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+import transactions from '../assets/transactions.json';
 
 const App = () => {
   return (
@@ -12,6 +14,7 @@ const App = () => {
       <Profile profile={profile} />
       <Stats stats={stats} />
       <PricingPlan pricingPlan={pricingPlanItem} />
+      <TransactionHistory items={transactions} />
     </Fragment>
   );
 };
