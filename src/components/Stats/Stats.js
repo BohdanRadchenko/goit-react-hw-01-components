@@ -10,8 +10,8 @@ const Stats = ({ title, stats }) => {
       <ul className={styles.list}>
         {stats.map(el => (
           <li
-            className={styles.item}
             key={el.id}
+            className={styles.item}
             style={{ backgroundColor: gen(0.8, 0.25).hexString() }}
           >
             <span className={styles.label}>{el.label}</span>
