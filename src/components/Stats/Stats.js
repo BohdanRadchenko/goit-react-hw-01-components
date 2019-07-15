@@ -12,7 +12,9 @@ const Stats = ({ title, stats }) => {
           <li
             key={el.id}
             className={styles.item}
-            style={{ backgroundColor: gen(0.8, 0.25).hexString() }}
+            style={{
+              backgroundColor: gen().rgbString(),
+            }}
           >
             <span className={styles.label}>{el.label}</span>
             <span className={styles.percentage}>{el.percentage}%</span>
