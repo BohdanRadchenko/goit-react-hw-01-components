@@ -1,0 +1,20 @@
+.pricingPlan {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #e7ecf2;
+  padding: 80px 0;
+}
+
+.pricingItem {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 30%;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
