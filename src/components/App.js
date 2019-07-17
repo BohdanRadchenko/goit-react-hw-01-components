@@ -1,22 +1,31 @@
-import React, { Fragment } from 'react';
-import Profile from './Profile/Profile';
-import profile from '../assets/profile.json';
-import Stats from './Stats/Stats';
-import stats from '../assets/stats.json';
-import PricingPlan from './PricingPlan/PricingPlan';
-import pricingPlanItem from '../assets/pricing-plan.json';
-import TransactionHistory from './TransactionHistory/TransactionHistory';
-import transactions from '../assets/transactions.json';
+/*eslint-disable*/
+import React, { Component } from 'react';
+import Form from './Form/Form';
+import TaskList from './TaskList/TaskList';
+import Task from './Task/Task';
 
-const App = () => {
-  return (
-    <Fragment>
-      <Profile profile={profile} />
-      <Stats stats={stats} title="Upload stats" />
-      <PricingPlan pricingPlan={pricingPlanItem} />
-      <TransactionHistory items={transactions} />
-    </Fragment>
-  );
-};
+class App extends Component {
+  state = {
+    items: [],
+  };
+
+  getTask = task => {
+    this.setState(state => ({
+      items: [...state.items, task],
+    }));
+  };
+
+  render() {
+    return (
+      <>
+        <Form getTask={this.getTask}>
+          <TaskList>
+            <Task />
+          </TaskList>
+        </Form>
+      </>
+    );
+  }
+}
 
 export default App;
