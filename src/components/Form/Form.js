@@ -6,6 +6,8 @@ import styled from './Form.module.css';
 class Form extends Component {
   state = {
     title: '',
+    text: '',
+    priority: 'normal',
   };
 
   hendleSubmt = e => {
@@ -21,21 +23,45 @@ class Form extends Component {
   reset = () => {
     this.setState({
       title: '',
+      text: '',
+      priority: 'normal',
     });
   };
 
   render() {
-    const { title } = this.state;
+    const { title, text, priority } = this.state;
     return (
       <form className={styled.form} onSubmit={this.handleFormSubmit}>
-        <input
-          className={styled.input}
-          type="text"
-          value={title}
-          name="title"
-          placeholder="Title"
+        <label>
+          <input
+            className={styled.input}
+            type="text"
+            value={title}
+            name="title"
+            placeholder="title"
+            onChange={this.hendleSubmt}
+          />
+        </label>
+        <label>
+          <input
+            className={styled.input}
+            type="text"
+            value={text}
+            name="text"
+            placeholder="text"
+            onChange={this.hendleSubmt}
+          />
+        </label>
+        <select
+          name="priority"
+          className={styled.select}
+          value={priority}
           onChange={this.hendleSubmt}
-        />
+        >
+          <option value="low">Low</option>
+          <option value="normal">Normal</option>
+          <option value="higth">Hight</option>
+        </select>
         <button className={styled.button} type="submit">
           Submit
         </button>
