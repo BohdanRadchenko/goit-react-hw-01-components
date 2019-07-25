@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React, { Fragment } from 'react';
 import Profile from './Profile/Profile';
 import profile from '../assets/profile.json';
