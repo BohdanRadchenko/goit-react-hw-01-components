@@ -1,0 +1,41 @@
+.container {
+  padding-top: 86px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.transactionsHistory {
+  text-align: center;
+}
+
+thead {
+  background-color: #00bcd4;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+tr {
+  font-size: 13px;
+  color: #5c6975;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+tr:nth-child(odd) {
+  background-color: #ecf2f3;
+}
+
+th {
+  color: #fff;
+  font-size: 18px;
+  background-color: #00bcd4;
+  padding: 13px 160px;
+}
+
+td {
+  padding: 18px 0;
+}
